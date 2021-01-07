@@ -68,7 +68,7 @@ class HoughLineCornerDetector:
                 2
             )
 
-        cv2.imwrite('output/hough_line.jpg', hough_line_output)
+        cv2.imwrite('Output/hough_line.jpg', hough_line_output)
 
     
     def _get_intersections(self):
@@ -140,7 +140,7 @@ class HoughLineCornerDetector:
                 5
             )
 
-        cv2.imwrite('output/grouped.jpg', grouped_output)
+        cv2.imwrite('Output/grouped.jpg', grouped_output)
 
     
     def _get_angle_between_lines(self, line_1, line_2):
@@ -208,7 +208,7 @@ class HoughLineCornerDetector:
                 5
             )
 
-        cv2.imwrite('output/intersection_point_output.jpg', intersection_point_output)
+        cv2.imwrite('Output/intersection_point_output.jpg', intersection_point_output)
 
 
     def _get_color_image(self):

@@ -74,7 +74,7 @@ class PageExtractor:
         M = cv2.getPerspectiveTransform(rect, dst)
         warped = cv2.warpPerspective(self._processed, M, (maxWidth, maxHeight))
 
-        if self.output_process: cv2.imwrite('output/deskewed.jpg', warped)
+        if self.output_process: cv2.imwrite('Output/deskewed.jpg', warped)
 
         # return the warped image
         return warped
